@@ -21,10 +21,10 @@ text.match(/^[A-Z].*[a-zA-Z][.]$/) ? true : false
 end
 
 def valid_phone_number?(phone)
-if phone.scan(/\b\(?\d{3}\)?\s?-?\d{3}-?\s?\d{4}\b/).empty?
-   return false
-else
-  return true
-end
-
+# if phone.scan(/\b\(?\d{3}\)?\s?-?\d{3}-?\s?\d{4}\b/).empty?
+#    return false
+# else
+#   return true
+# end
+ phone.scan(/\b\(?\d{3}\)?\s?-?\d{3}-?\s?\d{4}\b/).empty? ? true : false 
 end
