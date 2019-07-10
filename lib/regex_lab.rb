@@ -18,7 +18,10 @@ end
 end
 
 def valid_phone_number?(phone)
-phone.scan(/\b\(?\d{3}\)?\s?-?\d{3}-?\s?\d{4}\b/).empty? ? true : false
-
+if phone.scan(/\b\(?\d{3}\)?\s?-?\d{3}-?\s?\d{4}\b/).empty?
+   return false
+else
+  return true
+end
 
 end
