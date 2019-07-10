@@ -1,5 +1,5 @@
 def starts_with_a_vowel?(word)
-  word.downcase.match(/^[aeiou]/) != nil
+  word.match(/^[aeiou]/) != nil
 
 end
 
